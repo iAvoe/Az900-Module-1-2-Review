@@ -25,6 +25,8 @@
   - Organizations determine where to run their applications
   - Organizations control security, compliance, or legal requirements
 
+-----
+
 ### Capital Expenditure (CapEx / buy)
 - The up-front spending of money on physical infrastructure, investment-like
 - Like investment, depreciates over time
@@ -39,6 +41,8 @@
 - Only pay for the resources needed
 - Prices for individual resources and services are provided
 - Billing is based on actual usage
+
+-----
 
 ### Infrastructure as a Service (IaaS)
 A pay-as-you-go IT infrastructure - renting servers, VMs, networks
@@ -57,6 +61,8 @@ for example, draw.io, emails.
   - Best for developers
 - *SaaS:* Pay-as-you-go pricing where user subscribes for the software / account
   - Best for Microsoft365, business software users
+
+-----
 
 ### Horizontal Scaling
 - Adding more VMs or physical machines, controlled by virtual machine scale sets in Azure
@@ -93,6 +99,8 @@ for example, draw.io, emails.
 - Typically contain two or more regions:
   - Americas, Europe, Asia Pacific, Middle East, Africa
 
+-----
+
 ### Azure Resources
 - AppSvcs, Virtual Nets, Storage Accounts, VMs, DBs, Functions
 
@@ -117,11 +125,13 @@ for example, draw.io, emails.
 - Support up to 6 levels of depth:
   - subscriptions → resource groups → resources
 
+-----
+
 <br>
 
 ## Azure Compute Services
 
-### List of Azure Compute Services:
+### Compute Services:
 - **App Service**
   - A fully managed platform to build, deploy, scale web apps/APIs
 - **VMs**
@@ -138,7 +148,7 @@ for example, draw.io, emails.
   - Containers with distributed architectures
   - Large volumes of containers
 
-### Azure Networking Services
+### Networking Services
 - **Azure Virtual Network (VNet)**
   - Allow Azure resources to intercommunicate
 - **VPN Gateway**
@@ -152,6 +162,18 @@ for example, draw.io, emails.
   - Sets up a highly available network file share
   - Using Server Message Block (SMB) protocol
 
+### DB Services
+- **Azure Cosmos DB**
+  - A globally distributed DB service for high elasticity
+- **Azure SQL DB**
+  - A globally distributed DB service for high elasticity
+- **Azure DB for MySQL**
+  - A relational MSSQL DB as a service (DaaS)
+- **Azure DB for PostgreSQL**
+  - A relational DB service based on Postgres Engine
+
+-----
+
 ### Storage access tiers
 - **Hot**
   - Data/Disk that is accessed frequently
@@ -163,15 +185,7 @@ for example, draw.io, emails.
   - & stored for at least 180 days
   - & latency is not a problem
 
-### Azure DB Services
-- **Azure Cosmos DB**
-  - A globally distributed DB service for high elasticity
-- **Azure SQL DB**
-  - A globally distributed DB service for high elasticity
-- **Azure DB for MySQL**
-  - A relational MSSQL DB as a service (DaaS)
-- **Azure DB for PostgreSQL**
-  - A relational DB service based on Postgres Engine
+-----
 
 ### Azure SQL Managed Instance
 - Allows SQL-Server customers to lift-&-shift their Apps
@@ -183,6 +197,8 @@ for example, draw.io, emails.
 ### Azure Marketplace
 - Allow customers to find, try, purchase, provision apps & services (SaaS)
   - Open-Source platforms, VMs, DB images, App builds, dev tools
+
+-----
 
 ### VM Scale Sets
 - Create & manage a group of identical, load-balanced VMs
@@ -197,6 +213,8 @@ for example, draw.io, emails.
   - Groups VMs by common power source & network switch
   - By default, an availability set will split your VMs across up to 3 fault domains
   - Helps protect against a power or networking failure
+
+-----
 
 <br>
 
