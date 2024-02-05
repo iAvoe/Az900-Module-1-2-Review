@@ -44,23 +44,27 @@
 
 -----
 
+### On-premise DIY:
+- Private cloud, or not a cloud at all
+
 ### Infrastructure as a Service (IaaS)
-A pay-as-you-go IT infrastructure - renting servers, VMs, networks
+- A pay-as-you-go IT infrastructure - renting servers, VMs, networks
+- **Examples:** IBM Cloud, Amazon AWS, MS Azure, Alibaba Cloud
+- **Benefits:** Most flexible other than on-premise DIY, buyer configure & manage hardware
+- **Tgt. use:** Large website platform backend; render farms
 
 ### Platform as a Service (PaaS)
-An environment for developing, testing, deploying software without focusing on managing underlying infrastructure
+- An environment for developing, testing, deploying software without focusing on managing the underlying infrastructure
+- **Examples:** *`*`Same examples as IaaS`*`*
+- **Benefits:** Skip environment setup work and get to development / deployment
+- **Tgt. use:** Small-medium website platform backend and front end
+- **Note:** Usually mixed with IaaS service by cloud providers
 
 ### Software as a Service (SaaS)
-Users connect to & use cloud-based apps over the internet
-for example, draw.io, emails.
-
-### Cloud service in XaaS models
-- *IaaS:* The most flexible service, buyer configure & manage hardware
-  - Best for website / platform providers
-- *PaaS:* Targeting ease of app development, platform is handled by cloud provider
-  - Best for developers
-- *SaaS:* Pay-as-you-go pricing where user subscribes for the software / account
-  - Best for Microsoft365, business software users
+- Users connect to & use cloud-based apps over the internet
+- **Examples:** Microsoft365, draw.io, Emails, Google drive, business software, MSSQL Database users
+- **Benefits:** Pay-as-you-go pricing where user subscribes for the software / account
+- **Tgt. use:** Cliend-end service
 
 -----
 
