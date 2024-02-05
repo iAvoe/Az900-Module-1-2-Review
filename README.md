@@ -50,21 +50,27 @@
 ### Infrastructure as a Service (IaaS)
 - A pay-as-you-go IT infrastructure - renting servers, VMs, networks
 - **Examples:** IBM Cloud, Amazon AWS, MS Azure, Alibaba Cloud
-- **Benefits:** Most flexible other than on-premise DIY, buyer configure & manage hardware
-- **Tgt. use:** Large website platform backend; render farms
+- **Benefits:**
+  - Buyer configure & manage hardware
+  - More configurable (flexible) than PaaS, SaaS
+  - Can be more cost-effective than on-premise DIY
+- **Tgt. use:** Large website platform backend; compute farms; hybrid cloud that require exact same hardware, same driver / firmware
 
 ### Platform as a Service (PaaS)
 - An environment for developing, testing, deploying software without focusing on managing the underlying infrastructure
-- **Examples:** *`*`Same examples as IaaS`*`*
-- **Benefits:** Skip environment setup work and get to development / deployment
-- **Tgt. use:** Small-medium website platform backend and front end
+- **Examples:** *Same examples as IaaS*
+- **Benefits:**
+  - Skip (some of) the environment setup procedures and get to development
+  - Can be more cost-effective than on-premise DIY
+  - Can be very time-effective than on-premise DIY
+- **Tgt. use:** Small-medium website platform backend and front end, render farms
 - **Note:** Usually mixed with IaaS service by cloud providers
 
 ### Software as a Service (SaaS)
 - Users connect to & use cloud-based apps over the internet
 - **Examples:** Microsoft365, draw.io, Emails, Google drive, business software, MSSQL Database users
 - **Benefits:** Pay-as-you-go pricing where user subscribes for the software / account
-- **Tgt. use:** Cliend-end service
+- **Tgt. use:** front-end (client-side) service
 
 -----
 
