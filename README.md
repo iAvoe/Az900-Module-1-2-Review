@@ -11,11 +11,12 @@
   - Owned by cloud services provider or anyone that is hosting it
   - Provide resources & services to multiple organizations & users
   - Accessed Via Secure network connection (typically over internet)
-  - No capital expenditures to scale up
+  - Scale up by OpEx (operational expenditure)
   - Applications can be quickly provisioned and deprovisioned
   - Organizations pay only for what they use
 - #### Private Cloud
   - Hardware must be purchased for start-up and maintenance
+  - Scale up by CapEx (capital expenditure)
   - Organizations have complete control on resources and security
   - Organizations are responsible for hardware maintenance and updates
   - Organizations create a cloud environment in their datacenter
@@ -83,6 +84,19 @@
 ### List-&-shift in Cloud Migration
 - Apps, Systems, Workloads, Data moved from premises to cloud with little changes
 - In best case senario, it's Copy & Paste
+
+### Elasticity
+- How fast (defined) should/could horizontal scaling take action
+
+### Agility
+- How fast could an user / organization quickly and easily deploy cloud service
+- Related to lift-&-shift approach
+
+### Disaster Recovery
+- How fast could disaster recovery be completed
+- How identical could the recovered service be, compared to the killed service
+
+-----
 
 <br>
 
@@ -212,6 +226,10 @@
 
 ### VM Scale Sets
 - Create & manage a group of identical, load-balanced VMs
+- Lab: Create a Virtual Machine Scale set:
+  - Configure number of minimum & maximum instances
+  - scale-out duration & CPU threshold(%)
+  - scale-in duration, CPU threshold & decrease-by count
 
 ### VM Availability Sets
 - **Update Domain:**
