@@ -175,10 +175,14 @@
 ### Networking Services
 - **Azure Virtual Network (VNet)**
   - Allow Azure resources to intercommunicate
-- **VPN Gateway**
-  - Encrypt traffic between Azure VNet & an on-premises location
 - **Azure Express Route**
-  - Extends on-premises networks into Azure over a private connection
+  - Extends on-premises networks into Azure over a private fibre connection
+  - Convert private cloud to hybrid cloud
+  - Support for bandwidth up to 100 Gbps
+- **VPN Gateway**
+  - Alternate option than building a private fibre connection
+  - Encrypt traffic between Azure VNet & an on-premises location
+  - Supports site-to-site VPN, and point-to-site VPN
 - **Container storage (blob):**
   - Optimized for storing large amounts of unstructured data
 - **Disk Storage**
@@ -248,11 +252,57 @@
 
 ## Az900 Module 1-2 Quiz:
 
-#### Which of the following statements is true?
-- With Operating Expenses (OpEx), you are only responsible for the computing resources that you use
+
+## AAA (Authentication Authorization and Accounting)
+
+#### Which of the following is a logical unit of Azure services that links to an Azure account?
+- Azure subscription
+
+#### Which of the following statement is valid about an Azure subscription?
+- An Azure subscription is a logical unit of Azure services
+
+#### You use _________ to organize resources in an Azure subscription.
+- Resource groups
+
+#### Which Azure feature enables you to organize multiple subscriptions in hierarchies for unified policies and compliance?
+- Management groups
+
+#### Which of the following can be used to manage governance across multiple Azure subscriptions?
+- Management groups
+
+#### A user is simultaneously assigned multiple roles that use role-based access control. What are their actual permissions? The role permissions are:
+#### Role 1 - read || Role 2 - write || Role 3 - read and write.
+- Read and write
+
+#### ________ prevents resources from being accidentally deleted or changed
+- Azure Resource Locks
+
+#### ________ confirms the identity of a person who wants access
+- Authentication
+
+#### ________ grants the proper access to a legitimate user
+- Authorization
+
+#### Single sign-on (SSO) is an ________ method that enables users to sign in the first time and access various applications and resource by using same password.
+- Authentication
+
+
+## Storage
+
+#### What is the first step that you would take in order to share an image file as a blob in Azure Storage?
+- Create an Azure Storage account
+
+#### Which Azure Storage option is better for storing data for backup and restore, disaster recovery, and archiving?
+- Azure Blob Storage
+
+#### Which Azure Storage service supports big data analytics, as well as handling text and binary data types?
+- Azure Blobs
 
 #### You need to purchase an Azure account before you can use any Azure resources
 - False
+
+
+## Cloud definition
 
 #### Which best describes cloud computing?
 - Delivery of computing services over the internet
@@ -266,6 +316,9 @@
 #### Which cloud approach is used by organizations to take full advantage of on-premises technology investments and allows data and applications to be shared between two environments?
 - Hybrid cloud
 
+
+### Cloud benefits
+
 #### Which type of scaling involves adding or removing resources (such as virtual machines or containers) to meet demand?
 - Horizontal scaling (Adding nodes, without upgrading current machine)
 
@@ -275,17 +328,8 @@
 #### Which of the following choices isn't a benefit of using cloud services?
 - Geographic isolation
 
-#### Which of the following is a logical unit of Azure services that links to an Azure account?
-- Azure subscription
-
-#### Which of the following terms relates to making a service available with no downtime for an extended period?
-- High availability
-
 #### Which of the following options isn't a type of cloud computing?
 - Distributed cloud
-
-#### Which of the following statement is valid about an Azure subscription?
-- An Azure subscription is a logical unit of Azure services
 
 #### Which Azure compute resource can be deployed to manage a set of identical virtual machines?
 - Virtual machine scale sets
@@ -298,6 +342,9 @@
 
 #### Which Azure service allows users to use a cloud-hosted version of Windows from any location and connect from most modern browsers?
 - Azure Virtual Desktop
+
+
+### ExpressRoute & VPN
 
 #### Tailwind Traders wants to create a secure communication tunnel between its branch offices. Which of the following technologies can't be used?
 - Implicit FTP over SSL
@@ -312,69 +359,16 @@
 - 1: VPN gateway OR ExpressRoute gateway
 
 #### Tailwind Traders wants to use Azure ExpressRoute to connect its on-premises network to the Microsoft cloud. Which of the following choices isn't an ExpressRoute model that Tailwind Traders can use?
-- Site-to-site virtual private network
-
-#### Which of the following options can you use to link virtual networks?
-- Multi-chassis link aggregation
+- Site-to-site virtual private network (VPN)
 
 #### Which option is used to set the communication between an on-premises VPN device and an Azure VPN gateway through an encrypted tunnel over the internet?
 - Site-to-Site VPN
 
-#### What is the first step that you would take in order to share an image file as a blob in Azure Storage?
-- Create an Azure Storage account
 
-#### Which Azure Storage option is better for storing data for backup and restore, disaster recovery, and archiving?
-- Azure Blob Storage
+## Billing
 
-#### Which Azure Storage service supports big data analytics, as well as handling text and binary data types?
-- Azure Blobs
-
-#### What happens to the resources within a resource group when an action or setting at the Resource Group level is applied?
-- The setting is applied to current and future resources
-
-#### What Azure feature replicates resources across regions that are at least 300 miles away from each other?
-- Region Pairs
-
-#### Which Azure Virtual Machine feature staggers updates across VMs based on their update domain and fault domain?
-- Availability sets
-- Note: Stagger means random-sequentially
-
-#### Which tool automatically keeps files between an on-premises Windows server and an Azure cloud environment updated?
-- Azure File Sync
-
-#### Which storage redundancy option provides the highest degree of durability, with 16 nines of durability?
-- Geo-Redundant storage (GRS)
-
-#### ________ copies data to a secondary region from the primary region across multiple datacenters that are located many miles apart.
-- Geo-redundant storage (GRS)
-
-#### ________ in Azure enables you to deploy Azure resources close to the users.
-- Geo-distribution
-
-#### Which Azure Active Directory tool can vary the credentials needed to log in based on signals, such as where the user is located?
-- Conditional Access
-
-#### Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?
-- Conditional Access
-
-#### Which security model assumes the worst-case security scenario, and protects resources accordingly?
-- Zero trust
-
-#### A user is simultaneously assigned multiple roles that use role-based access control. What are their actual permissions? The role permissions are:
-#### Role 1 - read || Role 2 - write || Role 3 - read and write.
-- Read and write
-
-#### ________ enforces standards and assess compliance across your organization
-- Azure Policy
-
-#### How can you prevent non-compliant resources from being created, without having to manually evaluate each resource as it's created?
-- Azure Policy
-
-#### ________ is a repeatable set of governance tools that helps development teams quickly build and create new environments while adhering to organizational compliance to speed up development and deployment.
-- Azure Policy
-
-#### You receive an email notification that virtual machines (VMs) in an Azure region where you have VMs deployed is experiencing an outage. Which component of Azure Service Health will let you know if your application is impacted?
-- Resource health
+#### Which of the following statements is true?
+- With Operating Expenses (OpEx), you are only responsible for the computing resources that you use
 
 #### What's the best method to estimate the cost of migrating to the cloud while incurring minimal costs?
 - Use the Total Cost of Ownership calculator to estimate expected costs
@@ -388,17 +382,11 @@
 #### ________ helps control, analyze, and optimize workload costs
 - Cost management
 
-#### ________ provides hosting and management of an application and its underlying infrastructure, as well as any maintenance, upgrades, and security patching
-- Software as a service (SaaS)
-
-#### ________ provides a fully managed environment for developing, testing, delivering, and managing cloud-based applications
-- Platform as a service (PaaS)
-
-#### ________ provides servers and virtual machines, storage, networks, and operating systems on a pay-as-you-go basis
-- Infrastructure as a service (IaaS)
-
 #### Which of the following sentences best describes platform as a service (PaaS)?
 - Users can create & deploy an application as quickly as possible without having to worry about managing the underlying infrastructure.
+
+
+## IaaS, PaaS, SaaS
 
 #### Which of the following requires the most user management of cloud services?
 - IaaS
@@ -412,17 +400,45 @@
 ####  According to the shared responsibility model, in which service model is the cloud provider only responsible for the basics of physical security, power, and connectivity.
 - IaaS
 
+#### ________ provides hosting and management of an application and its underlying infrastructure, as well as any maintenance, upgrades, and security patching
+- Software as a service (SaaS)
+
+#### ________ provides a fully managed environment for developing, testing, delivering, and managing cloud-based applications
+- Platform as a service (PaaS)
+
+#### ________ provides servers and virtual machines, storage, networks, and operating systems on a pay-as-you-go basis
+- Infrastructure as a service (IaaS)
+
 #### Which of the following choices isn't a cloud computing category?
 - Network-as-a-Service (NaaS)
 
-#### Which defense in depth layer uses distributed denial of service (DDoS) protection?
-- Perimeter layer
 
-#### ________ enables you to scale to thousands of virtual machines for high-performance computing and large-scale parallel jobs.
-- Azure Batch
+## High Availability & Compliance boundaries
 
-#### ________ prevents resources from being accidentally deleted or changed
-- Azure Resource Locks
+#### Which of the following terms relates to making a service available with no downtime for an extended period?
+- High availability
+
+#### Which storage redundancy option provides the highest degree of durability, with 16 nines of durability?
+- Geo-Redundant storage (GRS)
+
+#### ________ copies data to a secondary region from the primary region across multiple datacenters that are located many miles apart.
+- Geo-redundant storage (GRS)
+
+#### Which Azure Virtual Machine feature staggers updates across VMs based on their update domain and fault domain?
+- Availability sets
+- Note: Stagger means random-sequentially
+
+#### What Azure feature replicates resources across regions that are at least 300 miles away from each other?
+- Region Pairs
+
+#### ________ in Azure enables you to deploy Azure resources close to the users.
+- Geo-distribution
+
+
+## Resource Groups
+
+#### What happens to the resources within a resource group when an action or setting at the Resource Group level is applied?
+- The setting is applied to current and future resources
 
 #### ________ enables you to provision a group of matching and load-balanced virtual machines in Azure.
 - An Azure virtual machine scale set
@@ -433,20 +449,45 @@
 #### How many resource groups can a resource be in at the same time?
 - One
 
-#### You use _________ to organize resources in an Azure subscription.
-- Resource groups
 
-#### Which Azure feature enables you to organize multiple subscriptions in hierarchies for unified policies and compliance?
-- Management groups
+## Security features
 
-#### Which of the following can be used to manage governance across multiple Azure subscriptions?
-- Management groups
+#### Which Azure Active Directory tool can vary the credentials needed to log in based on signals, such as where the user is located?
+- Conditional Access
 
-#### ________ confirms the identity of a person who wants access
-- Authentication
+#### Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?
+- Conditional Access
 
-#### ________ grants the proper access to a legitimate user
-- Authorization
+#### Which security model assumes the worst-case security scenario, and protects resources accordingly?
+- Zero trust
 
-#### Single sign-on (SSO) is an ________ method that enables users to sign in the first time and access various applications and resource by using same password.
-- Authentication
+#### ________ enforces standards and assess compliance across your organization
+- Azure Policy
+
+#### How can you prevent non-compliant resources from being created, without having to manually evaluate each resource as it's created?
+- Azure Policy
+
+#### ________ is a repeatable set of governance tools that helps development teams quickly build and create new environments while adhering to organizational compliance to speed up development and deployment.
+- Azure Policy
+
+#### You receive an email notification that virtual machines (VMs) in an Azure region where you have VMs deployed is experiencing an outage. Which component of Azure Service Health will let you know if your application is impacted?
+- Resource health
+
+#### Which defense in depth layer uses distributed denial of service (DDoS) protection?
+- Perimeter layer
+
+
+## Unsorted
+
+#### Which of the following options can you use to link virtual networks?
+- Multi-chassis link aggregation (MC-LAG)
+
+#### Which tool automatically keeps files between an on-premises Windows server and an Azure cloud environment updated?
+- Azure File Sync
+
+#### ________ enables you to scale to thousands of virtual machines for high-performance computing and large-scale parallel jobs.
+- Azure Batch
+
+
+
+
