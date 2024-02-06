@@ -261,15 +261,6 @@
 #### Which of the following statement is valid about an Azure subscription?
 - An Azure subscription is a logical unit of Azure services
 
-#### You use _________ to organize resources in an Azure subscription.
-- Resource groups
-
-#### Which Azure feature enables you to organize multiple subscriptions in hierarchies for unified policies and compliance?
-- Management groups
-
-#### Which of the following can be used to manage governance across multiple Azure subscriptions?
-- Management groups
-
 #### A user is simultaneously assigned multiple roles that use role-based access control. What are their actual permissions? The role permissions are:
 #### Role 1 - read || Role 2 - write || Role 3 - read and write.
 - Read and write
@@ -435,7 +426,7 @@
 - Geo-distribution
 
 
-## Resource Groups
+## Resource & Management Groups
 
 #### What happens to the resources within a resource group when an action or setting at the Resource Group level is applied?
 - The setting is applied to current and future resources
@@ -448,6 +439,15 @@
 
 #### How many resource groups can a resource be in at the same time?
 - One
+
+#### You use _________ to organize resources in an Azure subscription.
+- Resource groups
+
+#### Which Azure feature enables you to organize multiple subscriptions in hierarchies for unified policies and compliance?
+- Management groups
+
+#### Which of the following can be used to manage governance across multiple Azure subscriptions?
+- Management groups
 
 
 ## Security features
