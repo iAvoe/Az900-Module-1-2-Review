@@ -286,14 +286,27 @@
 #### What is a blob?
 - Binary large objects (e.g., thousands of files containing text, images image and video)
 
-#### What is the first step that you would take in order to share an image file as a blob in Azure Storage?
-- Create an Azure Storage account
-
 #### Which Azure Storage option is better for storing data for backup and restore, disaster recovery, and archiving?
 - Azure Blob Storage
 
 #### Which Azure Storage service supports big data analytics, as well as handling text and binary data types?
 - Azure Blobs
+
+#### Which Azure Storage service should you use to store unstructured files, such as images, that will be served on webpages?
+- Azure Blobs
+
+#### What is the first step that you would take in order to share an image file as a blob in Azure Storage?
+- Create an Azure Storage account
+
+#### Which Azure Blob storage tier Stores data offline, Offers the lowest storage costs, and has the highest costs to access data?
+- Archive tier
+
+#### Which Azure Blob storage service tier has the highest storage costs and the fastest access times for reading and writing data?
+- Hot tier
+
+#### Which two scenarios are common use cases for Azure Blob storage?
+- Serving images or documents directly to a browser
+- Storing data for backup and restore 
 
 #### You need to purchase an Azure account before you can use any Azure resources
 - False
