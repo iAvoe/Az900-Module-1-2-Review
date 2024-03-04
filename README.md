@@ -277,8 +277,12 @@
 #### Single sign-on (SSO) is an ________ method that enables users to sign in the first time and access various applications and resource by using same password.
 - Authentication
 
+-----
 
-## Storage
+### Storage
+
+#### What is a blob?
+- Binary large objects (e.g., image and video)
 
 #### What is the first step that you would take in order to share an image file as a blob in Azure Storage?
 - Create an Azure Storage account
@@ -292,8 +296,9 @@
 #### You need to purchase an Azure account before you can use any Azure resources
 - False
 
+-----
 
-## Cloud definition
+### Cloud definition
 
 #### Which best describes cloud computing?
 - Delivery of computing services over the internet
@@ -307,6 +312,7 @@
 #### Which cloud approach is used by organizations to take full advantage of on-premises technology investments and allows data and applications to be shared between two environments?
 - Hybrid cloud
 
+-----
 
 ### Cloud benefits
 
@@ -322,18 +328,13 @@
 #### Which of the following options isn't a type of cloud computing?
 - Distributed cloud
 
-#### Which Azure compute resource can be deployed to manage a set of identical virtual machines?
-- Virtual machine scale sets
-
-#### Which of the following services should be used when the primary concern is to perform work in response to an event (often via a REST command) that needs a response in a few seconds?
-- Azure Functions
-
 #### Your company has a team of remote workers that need to use Windows-based software to develop your company's applications, but your team members are using various operating systems like macOS, Linux, and Windows. Which Azure compute service would help resolve this scenario?
 - Azure Virtual Desktop
 
 #### Which Azure service allows users to use a cloud-hosted version of Windows from any location and connect from most modern browsers?
 - Azure Virtual Desktop
 
+-----
 
 ### ExpressRoute & VPN
 
@@ -355,8 +356,9 @@
 #### Which option is used to set the communication between an on-premises VPN device and an Azure VPN gateway through an encrypted tunnel over the internet?
 - Site-to-Site VPN
 
+-----
 
-## Billing
+### Billing
 
 #### Which of the following statements is true?
 - With Operating Expenses (OpEx), you are only responsible for the computing resources that you use
@@ -388,7 +390,7 @@
 
 -----
 
-## IaaS, PaaS, SaaS
+### IaaS, PaaS, SaaS
 
 #### In a platform as a service (PaaS) model, which two components are the responsibility of the cloud service provider?
 - Operating System & Physical Network
@@ -426,8 +428,9 @@
 #### Which of the following choices isn't a cloud computing category?
 - Network-as-a-Service (NaaS)
 
+-----
 
-## High Availability & Compliance boundaries
+### High Availability & Compliance boundaries
 
 #### Which of the following terms relates to making a service available with no downtime for an extended period?
 - High availability
@@ -459,9 +462,6 @@
 #### What happens to the resources within a resource group when an action or setting at the Resource Group level is applied?
 - The setting is applied to current and future resources
 
-#### ________ enables you to provision a group of matching and load-balanced virtual machines in Azure.
-- An Azure virtual machine scale set
-
 #### Which of the following features does not apply to resource groups?
 - Resource groups can be nested
 
@@ -471,14 +471,37 @@
 #### You use _________ to organize resources in an Azure subscription.
 - Resource groups
 
+#### __________ is the logical container used to combine and organize Azure resources.
+- Resource groups
+- 
 #### Which Azure feature enables you to organize multiple subscriptions in hierarchies for unified policies and compliance?
 - Management groups
 
 #### Which of the following can be used to manage governance across multiple Azure subscriptions?
 - Management groups
 
+#### Which resource can you use to manage access, policies, and compliance across multiple subscriptions?
+- Management groups
 
-## Security features
+-----
+
+### Scalability and elasiticy
+
+#### What is horizontal scaling
+- Adding more computing nodes (PCs or VMs)
+
+#### Which Azure compute resource can be deployed to manage a set of identical virtual machines?
+- Virtual machine scale sets
+
+#### ________ enables you to provision a group of matching and load-balanced virtual machines in Azure.
+- An Azure virtual machine scale set
+
+#### ________ enables you to scale to thousands of virtual machines for high-performance computing and large-scale parallel jobs.
+- Azure Batch
+
+-----
+
+### Security features
 
 #### Which Azure Active Directory tool can vary the credentials needed to log in based on signals, such as where the user is located?
 - Conditional Access
@@ -524,9 +547,6 @@
 
 #### Which tool automatically keeps files between an on-premises Windows server and an Azure cloud environment updated?
 - Azure File Sync
-
-#### ________ enables you to scale to thousands of virtual machines for high-performance computing and large-scale parallel jobs.
-- Azure Batch
 
 
 
