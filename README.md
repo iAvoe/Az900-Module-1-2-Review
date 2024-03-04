@@ -376,6 +376,9 @@
 #### Which of the following sentences best describes platform as a service (PaaS)?
 - Users can create & deploy an application as quickly as possible without having to worry about managing the underlying infrastructure.
 
+#### You plan to build a new solution in Azure that will use platform as a service (PaaS) products. What should you use to estimate the monthly costs?
+- Azure Pricing calculator
+
 
 ## IaaS, PaaS, SaaS
 
@@ -425,6 +428,11 @@
 #### ________ in Azure enables you to deploy Azure resources close to the users.
 - Geo-distribution
 
+#### In cloud computing, ________ allows you to deploy applications to regional datacenters around the world.
+- Geo-location / get-distribution
+
+#### What is high availability in a public cloud environment dependent on?
+- The service-level agreement (SLA) that you choose
 
 ## Resource & Management Groups
 
