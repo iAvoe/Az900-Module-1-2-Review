@@ -361,35 +361,52 @@
 #### Which of the following statements is true?
 - With Operating Expenses (OpEx), you are only responsible for the computing resources that you use
 
-#### What's the best method to estimate the cost of migrating to the cloud while incurring minimal costs?
-- Use the Total Cost of Ownership calculator to estimate expected costs
-
 #### ________ estimates workload costs
 - Pricing calculator
 
 #### ________ estimates the cost savings by comparing datacenter costs to running the same workload on Azure
 - TCO calculator
 
+#### What's the best method to estimate the cost of migrating to the cloud while incurring minimal costs?
+- Use the Total Cost of Ownership calculator to estimate expected costs
+
 #### ________ helps control, analyze, and optimize workload costs
 - Cost management
-
-#### Which of the following sentences best describes platform as a service (PaaS)?
-- Users can create & deploy an application as quickly as possible without having to worry about managing the underlying infrastructure.
 
 #### You plan to build a new solution in Azure that will use platform as a service (PaaS) products. What should you use to estimate the monthly costs?
 - Azure Pricing calculator
 
+#### What is the main difference inbetween Total Cost of Ownership (TCO) and Azure Pricing calculator?
+- TCO calculator estimates the cost of running an environment in Azure
+- Azure Pricing Calculator checks the cost of modifying plans and service grades in Azure
+
+#### Which of the following sentences best describes platform as a service (PaaS)?
+- Users can create & deploy an application as quickly as possible without having to worry about managing the underlying infrastructure.
+
+
 
 ## IaaS, PaaS, SaaS
+
+#### In a platform as a service (PaaS) model, which two components are the responsibility of the cloud service provider?
+- Operating System & Physical Network
+
+#### What type of cloud service type would a Finance and Expense tracking solution typically be in?
+- SaaS
+
+#### Which type of cloud service model is typically licensed through a monthly or annual subscription?
+- SaaS
+
+#### In which cloud service model is the customer responsible for managing the operating system?
+- SaaS
+
+#### Which type of cloud service are virtual networks?
+- IaaS
 
 #### Which of the following requires the most user management of cloud services?
 - IaaS
 
 #### Which cloud service type is most suited to a lift-&-shift migration from an on-premises data center to a cloud deployment?
 - IaaS
-
-#### What type of cloud service type would a Finance and Expense tracking solution typically be in?
-- SaaS
 
 ####  According to the shared responsibility model, in which service model is the cloud provider only responsible for the basics of physical security, power, and connectivity.
 - IaaS
