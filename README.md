@@ -486,13 +486,25 @@
 #### Which security model assumes the worst-case security scenario, and protects resources accordingly?
 - Zero trust
 
+#### What can you use to restrict the deployment of a virtual machine to a specific location?
+- Azure Policy
+
+#### What can you use to ensure that a development team can only create virtual machines of a certain size?
+- Azure Policy
+
 #### ________ enforces standards and assess compliance across your organization
+- Azure Policy
+
+#### You need to recommend a solution for Azure virtual machine deployments. The solution must enforce company standards on the virtual machines. What should you include in the recommendation?
 - Azure Policy
 
 #### How can you prevent non-compliant resources from being created, without having to manually evaluate each resource as it's created?
 - Azure Policy
 
 #### ________ is a repeatable set of governance tools that helps development teams quickly build and create new environments while adhering to organizational compliance to speed up development and deployment.
+- Azure Policy
+
+#### You need to ensure that multi-factor authentication (MFA) is enabled on accounts with write permissions in an Azure subscription. What should you implement?
 - Azure Policy
 
 #### You receive an email notification that virtual machines (VMs) in an Azure region where you have VMs deployed is experiencing an outage. Which component of Azure Service Health will let you know if your application is impacted?
