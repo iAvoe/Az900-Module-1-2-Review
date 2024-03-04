@@ -383,7 +383,10 @@
 #### Which of the following sentences best describes platform as a service (PaaS)?
 - Users can create & deploy an application as quickly as possible without having to worry about managing the underlying infrastructure.
 
+#### For which resource does Azure generate separate billing reports and invoices by default?
+- Azure Subscriptions
 
+-----
 
 ## IaaS, PaaS, SaaS
 
