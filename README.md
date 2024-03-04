@@ -186,6 +186,7 @@
   - Supports site-to-site VPN, and point-to-site VPN
 - **Container storage (blob):**
   - Optimized for storing large amounts of unstructured data
+  - Can contain thousands of files containing text and images
 - **Disk Storage**
 - **Azure Files**
   - Sets up a highly available network file share
@@ -283,7 +284,7 @@
 ### Storage
 
 #### What is a blob?
-- Binary large objects (e.g., image and video)
+- Binary large objects (e.g., thousands of files containing text, images image and video)
 
 #### What is the first step that you would take in order to share an image file as a blob in Azure Storage?
 - Create an Azure Storage account
