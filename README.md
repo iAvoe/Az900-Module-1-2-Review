@@ -175,6 +175,7 @@
 ### Networking Services
 - **Azure Virtual Network (VNet)**
   - Allow Azure resources to intercommunicate
+  - Virtual network peering can be used to allow 2 virtual networks to communicate
 - **Azure Express Route**
   - Extends on-premises networks into Azure over a private fibre connection
   - Convert private cloud to hybrid cloud
