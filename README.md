@@ -463,6 +463,9 @@
 - Availability sets
 - Note: Stagger means random-sequentially
 
+#### Rank Azure Architectual Components by their distance apart
+- Regions < Availability Zones < Region Pairs < Geographies
+
 #### What Azure feature replicates resources across regions that are at least 300 miles away from each other?
 - Region Pairs
 
@@ -491,7 +494,7 @@
 
 #### __________ is the logical container used to combine and organize Azure resources.
 - Resource groups
-- 
+
 #### Which Azure feature enables you to organize multiple subscriptions in hierarchies for unified policies and compliance?
 - Management groups
 
