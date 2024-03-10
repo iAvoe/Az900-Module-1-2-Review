@@ -277,8 +277,12 @@
 #### Single sign-on (SSO) is an ________ method that enables users to sign in the first time and access various applications and resource by using same password.
 - Authentication
 
+#### A user has logged in his/her account, then performed a Captcha to verify that he/she is not a robot, he/she has performed an ________ and an ________.
+- Authentication, Authentication
 
-## Storage
+-----
+
+### Storage
 
 #### What is the first step that you would take in order to share an image file as a blob in Azure Storage?
 - Create an Azure Storage account
@@ -292,8 +296,9 @@
 #### You need to purchase an Azure account before you can use any Azure resources
 - False
 
+-----
 
-## Cloud definition
+### Cloud definition
 
 #### Which best describes cloud computing?
 - Delivery of computing services over the internet
@@ -307,6 +312,7 @@
 #### Which cloud approach is used by organizations to take full advantage of on-premises technology investments and allows data and applications to be shared between two environments?
 - Hybrid cloud
 
+-----
 
 ### Cloud benefits
 
@@ -334,6 +340,7 @@
 #### Which Azure service allows users to use a cloud-hosted version of Windows from any location and connect from most modern browsers?
 - Azure Virtual Desktop
 
+-----
 
 ### ExpressRoute & VPN
 
@@ -355,8 +362,9 @@
 #### Which option is used to set the communication between an on-premises VPN device and an Azure VPN gateway through an encrypted tunnel over the internet?
 - Site-to-Site VPN
 
+-----
 
-## Billing
+### Billing
 
 #### Which of the following statements is true?
 - With Operating Expenses (OpEx), you are only responsible for the computing resources that you use
@@ -376,8 +384,9 @@
 #### Which of the following sentences best describes platform as a service (PaaS)?
 - Users can create & deploy an application as quickly as possible without having to worry about managing the underlying infrastructure.
 
+-----
 
-## IaaS, PaaS, SaaS
+### IaaS, PaaS, SaaS
 
 #### Which of the following requires the most user management of cloud services?
 - IaaS
@@ -403,8 +412,9 @@
 #### Which of the following choices isn't a cloud computing category?
 - Network-as-a-Service (NaaS)
 
+-----
 
-## High Availability & Compliance boundaries
+### High Availability & Compliance boundaries
 
 #### Which of the following terms relates to making a service available with no downtime for an extended period?
 - High availability
@@ -425,8 +435,9 @@
 #### ________ in Azure enables you to deploy Azure resources close to the users.
 - Geo-distribution
 
+-----
 
-## Resource & Management Groups
+### Resource & Management Groups
 
 #### What happens to the resources within a resource group when an action or setting at the Resource Group level is applied?
 - The setting is applied to current and future resources
@@ -449,8 +460,9 @@
 #### Which of the following can be used to manage governance across multiple Azure subscriptions?
 - Management groups
 
+-----
 
-## Security features
+### Security features
 
 #### Which Azure Active Directory tool can vary the credentials needed to log in based on signals, such as where the user is located?
 - Conditional Access
@@ -476,8 +488,9 @@
 #### Which defense in depth layer uses distributed denial of service (DDoS) protection?
 - Perimeter layer
 
+-----
 
-## Unsorted
+### Unsorted
 
 #### Which of the following options can you use to link virtual networks?
 - Multi-chassis link aggregation (MC-LAG)
