@@ -176,6 +176,8 @@
 - **Azure Virtual Network (VNet)**
   - Allow Azure resources to intercommunicate
   - Virtual network peering can be used to allow 2 virtual networks to communicate
+- **Azure Virtual Network Service Endpoints**
+  - Connect Azure resources to an Azure virtual network
 - **Azure Express Route**
   - Extends on-premises networks into Azure over a private fibre connection
   - Convert private cloud to hybrid cloud
@@ -314,6 +316,13 @@
 #### You need to purchase an Azure account before you can use any Azure resources
 - False
 
+#### Which storage service offers fully managed file shares in the cloud that are accessible by using Server Message Block (SMB) protocol?
+- Azure Files
+
+#### Which two protocols can be used to access Azure file shares? 
+- Server Msssage Block (SMB)
+- Network File System (NFS)
+
 -----
 
 ### Cloud definition
@@ -352,9 +361,15 @@
 #### Which Azure service allows users to use a cloud-hosted version of Windows from any location and connect from most modern browsers?
 - Azure Virtual Desktop
 
+#### What can you use to provide Mac and Android users with access to a Windows environment that will run Windows-based applications?
+- Azure Virtual Desktop
+
+#### What is an advantage of cloud computing compared to on-premises deployments?
+- You can scale more quickly
+
 -----
 
-### ExpressRoute & VPN
+### Azure Networking Services
 
 #### Tailwind Traders wants to create a secure communication tunnel between its branch offices. Which of the following technologies can't be used?
 - Implicit FTP over SSL
@@ -366,7 +381,11 @@
 - A point-to-point Ethernet connection
 
 #### How many VPN gateways can you deploy in each virtual network?
-- 1: VPN gateway OR ExpressRoute gateway
+- 1 gateway: VPN gateway OR ExpressRoute gateway
+
+#### Which two services can you use to establish network connectivity between an on-premises network and Azure resources?
+- Azure VPN Gateway
+- ExpressRoute
 
 #### Tailwind Traders wants to use Azure ExpressRoute to connect its on-premises network to the Microsoft cloud. Which of the following choices isn't an ExpressRoute model that Tailwind Traders can use?
 - Site-to-site virtual private network (VPN)
@@ -374,9 +393,19 @@
 #### Which option is used to set the communication between an on-premises VPN device and an Azure VPN gateway through an encrypted tunnel over the internet?
 - Site-to-Site VPN
 
+#### Which of the following options can you use to link virtual networks?
+- Multi-chassis link aggregation (MC-LAG)
+
+#### Which tool automatically keeps files between an on-premises Windows server and an Azure cloud environment updated?
+- Azure File Sync
+
 -----
 
 ### Billing
+
+#### Which two factors affect Azure costs?
+- Resource Location
+- Resource Usage
 
 #### Which of the following statements is true?
 - With Operating Expenses (OpEx), you are only responsible for the computing resources that you use
@@ -406,12 +435,22 @@
 #### For which resource does Azure generate separate billing reports and invoices by default?
 - Azure Subscriptions
 
+#### What can you use to connect Azure resources, such as Azure SQL databases, to an Azure virtual network?
+- Service Endpoints
+
 -----
 
 ### IaaS, PaaS, SaaS
 
+#### What is the customer responsible for in a software as a service (SaaS) model?
+- Data and access
+
 #### In a platform as a service (PaaS) model, which two components are the responsibility of the cloud service provider?
-- Operating System & Physical Network
+- Operating System
+- Physical Network
+
+#### Which cloud service model is used by Azure SQL Database?
+- PaaS
 
 #### What type of cloud service type would a Finance and Expense tracking solution typically be in?
 - SaaS
@@ -450,6 +489,9 @@
 
 ### High Availability & Compliance boundaries
 
+#### What are cloud-based backup services, data replication, and geo-distribution features of?
+- A disaster recovery plan
+
 #### Which of the following terms relates to making a service available with no downtime for an extended period?
 - High availability
 
@@ -478,6 +520,8 @@
 #### What is high availability in a public cloud environment dependent on?
 - The service-level agreement (SLA) that you choose
 
+-----
+
 ### Resource & Management Groups
 
 #### What happens to the resources within a resource group when an action or setting at the Resource Group level is applied?
@@ -495,6 +539,15 @@
 #### __________ is the logical container used to combine and organize Azure resources.
 - Resource groups
 
+#### You use __________ to organize resources in an Azure subscription.
+- Resource groups
+
+#### How can Tailwind Traders allow some users to control the virtual machines in each environment but prevent them from modifying networking and other resources in the same resource group or Azure subscription?
+- Create a role assignment through Azure role-based access control (Azure RBAC)
+
+#### What can you use to allow a user to manage all the resources in a resource group?
+- Azure role-based access control (Azure RBAC)
+
 #### Which Azure feature enables you to organize multiple subscriptions in hierarchies for unified policies and compliance?
 - Management groups
 
@@ -511,6 +564,9 @@
 #### What is horizontal scaling
 - Adding more computing nodes (PCs or VMs)
 
+#### Adding more RAM and upgrading CPUs is called
+- Vertical Scalling
+
 #### Which Azure compute resource can be deployed to manage a set of identical virtual machines?
 - Virtual machine scale sets
 
@@ -519,6 +575,9 @@
 
 #### ________ enables you to scale to thousands of virtual machines for high-performance computing and large-scale parallel jobs.
 - Azure Batch
+
+#### You have an Azure virtual machine that is accessed only between 9:00 and 17:00 each day.  What should you do to minimize costs but preserve the associated hard disks and data?
+- Deallocate the virtual machine when it is not needed
 
 -----
 
@@ -532,6 +591,9 @@
 
 #### Which security model assumes the worst-case security scenario, and protects resources accordingly?
 - Zero trust
+
+#### What can you use to ensure that new and existing Azure resources stay in compliance with corporate standards?
+- Azure Policy
 
 #### What can you use to restrict the deployment of a virtual machine to a specific location?
 - Azure Policy
@@ -559,16 +621,6 @@
 
 #### Which defense in depth layer uses distributed denial of service (DDoS) protection?
 - Perimeter layer
-
------
-
-### Unsorted
-
-#### Which of the following options can you use to link virtual networks?
-- Multi-chassis link aggregation (MC-LAG)
-
-#### Which tool automatically keeps files between an on-premises Windows server and an Azure cloud environment updated?
-- Azure File Sync
 
 
 
