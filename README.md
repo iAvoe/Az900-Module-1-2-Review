@@ -343,9 +343,6 @@
 
 ### Cloud benefits
 
-#### Which type of scaling involves adding or removing resources (such as virtual machines or containers) to meet demand?
-- Horizontal scaling (Adding nodes, without upgrading current machine)
-
 #### What is characterized as the ability of a system to recover from failures and continue to function?
 - Resiliency
 
@@ -364,12 +361,12 @@
 #### What can you use to provide Mac and Android users with access to a Windows environment that will run Windows-based applications?
 - Azure Virtual Desktop
 
-#### What is an advantage of cloud computing compared to on-premises deployments?
-- You can scale more quickly
-
 -----
 
 ### Azure Networking Services
+
+#### Which tool automatically keeps files between an on-premises Windows server and an Azure cloud environment updated?
+- Azure File Sync
 
 #### Tailwind Traders wants to create a secure communication tunnel between its branch offices. Which of the following technologies can't be used?
 - Implicit FTP over SSL
@@ -380,28 +377,80 @@
 #### ________ is supported by ExpressRoute for connecting an on-premises network to Azure
 - A point-to-point Ethernet connection
 
-#### How many VPN gateways can you deploy in each virtual network?
-- 1 gateway: VPN gateway OR ExpressRoute gateway
+-----
+
+### Virtual Private Network (VPN) Gateway
+
+#### Tailwind Traders wants to use Azure ExpressRoute to connect its on-premises network to the Microsoft cloud. Which of the following choices isn't an ExpressRoute model that Tailwind Traders can use?
+- Site-to-site virtual private network (VPN)
 
 #### Which two services can you use to establish network connectivity between an on-premises network and Azure resources?
 - Azure VPN Gateway
 - ExpressRoute
 
-#### Tailwind Traders wants to use Azure ExpressRoute to connect its on-premises network to the Microsoft cloud. Which of the following choices isn't an ExpressRoute model that Tailwind Traders can use?
-- Site-to-site virtual private network (VPN)
-
 #### Which option is used to set the communication between an on-premises VPN device and an Azure VPN gateway through an encrypted tunnel over the internet?
 - Site-to-Site VPN
+
+#### Which scenario is a use case for a VPN gateway?
+- Connecting an on-premises datacenter to an Azure virtual network
+
+-----
+
+### Virtual Network / VNet
+
+#### Which type of cloud service are virtual networks?
+- IaaS
+
+#### How many VPN gateways can you deploy in each virtual network?
+- 1 gateway: VPN gateway OR ExpressRoute gateway
 
 #### Which of the following options can you use to link virtual networks?
 - Multi-chassis link aggregation (MC-LAG)
 
-#### Which tool automatically keeps files between an on-premises Windows server and an Azure cloud environment updated?
-- Azure File Sync
+#### What can you use to connect Azure resources, such as Azure SQL databases, to an Azure virtual network?
+- Service Endpoints
+
+#### Your company plans to move several servers to Azure. The company's compliance policy states that a server named FinServer must be on a separate network segment.
+#### Which Azure solution should you recommend?
+- A virtual network for FinServer and another virtual network for all the other servers
+- Note: Networks in Azure are known as virtual networks. A virtual network can have multiple IP address spaces and multiple subnets,
+- Note: Azure automatically routes traffic between different subnets within a virtual network.
+
+#### You need to allow resources on two different Azure virtual networks to communicate with each other. What should you configure?
+- Virtual Network peering / VNet Peering
+
+#### You have an Azure environment that contains multiple Azure virtual machines.
+#### You plan to implement a solution that enables the client computers on your on-premises network to communicate to the Azure virtual machines.
+#### You need to recommend which Azure resources must be created for the planned solution.
+#### What 2 Azure resources should you include in the recommendation?
+- A virtual network gateway
+- A gateway subnet
+
+#### Your company has virtual machines (VMs) hosted in Microsoft Azure. The VMs are located in a single Azure virtual network named VNet1.
+#### The company has users that work remotely. The remote workers require access to the VMs on VNet1. To provide access for the remote workers, you:
+- Configure a Point-to-Site (P2S) VPN.
+
+#### (Repeated from M1) How many VPN gateways can you deploy in each virtual network?
+- 1 gateway: VPN gateway OR ExpressRoute gateway
+
+#### (Repeated from M1) Which of the following options can you use to link virtual networks?
+- Multi-chassis link aggregation (MC-LAG)
 
 -----
 
 ### Billing
+
+#### ______ refers to upfront costs incurred one time, such as hardware purchases.
+- Capital expenditure (CapEx)
+
+#### Why is cloud computing often less expensive than on-premises datacenters?
+- You are only billed for what you use (OpEx)
+
+#### For which resource does Azure generate separate billing reports and invoices by default?
+- Azure Subscriptions
+
+#### Your company plans to migrate all its network resources to Azure. You need to start the planning process by exploring Azure. What should you create first?
+- Subscription
 
 #### Which two factors affect Azure costs?
 - Resource Location
@@ -410,37 +459,34 @@
 #### Which of the following statements is true?
 - With Operating Expenses (OpEx), you are only responsible for the computing resources that you use
 
+#### You plan to build a new solution in Azure that will use platform as a service (PaaS) products. What should you use to estimate the monthly costs?
+- Azure Pricing calculator
+
 #### ________ estimates workload costs
 - Pricing calculator
 
 #### ________ estimates the cost savings by comparing datacenter costs to running the same workload on Azure
-- TCO calculator
+- Total Cost of Ownership (TCO) calculator
 
 #### What's the best method to estimate the cost of migrating to the cloud while incurring minimal costs?
-- Use the Total Cost of Ownership calculator to estimate expected costs
-
-#### ________ helps control, analyze, and optimize workload costs
-- Cost management
-
-#### You plan to build a new solution in Azure that will use platform as a service (PaaS) products. What should you use to estimate the monthly costs?
-- Azure Pricing calculator
+- Use the Total Cost of Ownership (TCO) calculator to estimate expected costs
 
 #### What is the main difference inbetween Total Cost of Ownership (TCO) and Azure Pricing calculator?
 - TCO calculator estimates the cost of running an environment in Azure
 - Azure Pricing Calculator checks the cost of modifying plans and service grades in Azure
 
-#### Which of the following sentences best describes platform as a service (PaaS)?
-- Users can create & deploy an application as quickly as possible without having to worry about managing the underlying infrastructure.
-
-#### For which resource does Azure generate separate billing reports and invoices by default?
-- Azure Subscriptions
-
-#### What can you use to connect Azure resources, such as Azure SQL databases, to an Azure virtual network?
-- Service Endpoints
+#### ________ helps control, analyze, and optimize workload costs
+- Cost management
 
 -----
 
 ### IaaS, PaaS, SaaS
+
+#### What uses the infrastructure as a service (IaaS) cloud service model?
+- Azure virtual machines
+
+#### Which of the following sentences best describes platform as a service (PaaS)?
+- Users can create & deploy an application as quickly as possible without having to worry about managing the underlying infrastructure.
 
 #### What is the customer responsible for in a software as a service (SaaS) model?
 - Data and access
@@ -449,8 +495,11 @@
 - Operating System
 - Physical Network
 
-#### Which cloud service model is used by Azure SQL Database?
-- PaaS
+#### Which cloud service model is used by Microsoft Office 365?
+- SaaS
+
+#### Which type of cloud service model is typically licensed through a monthly or annual subscription?
+- SaaS
 
 #### What type of cloud service type would a Finance and Expense tracking solution typically be in?
 - SaaS
@@ -458,10 +507,14 @@
 #### Which type of cloud service model is typically licensed through a monthly or annual subscription?
 - SaaS
 
-#### In which cloud service model is the customer responsible for managing the operating system?
-- SaaS
+#### Which cloud service model is used by Azure SQL Database?
+- PaaS
 
-#### Which type of cloud service are virtual networks?
+##### In which two deployment models are customers responsible for managing operating systems that host applications?
+- IaaS
+- on-premises
+
+#### In which cloud service model is the customer responsible for managing the operating system?
 - IaaS
 
 #### Which of the following requires the most user management of cloud services?
@@ -479,6 +532,10 @@
 #### ________ provides a fully managed environment for developing, testing, delivering, and managing cloud-based applications
 - Platform as a service (PaaS)
 
+#### Your organization is building a custom application. You need to focus on application development rather than configuration and management of servers. Which cloud service model should you use?
+- Platform as a service (PaaS)
+- Note: You don't know what software and tools the devs are planning to use
+
 #### ________ provides servers and virtual machines, storage, networks, and operating systems on a pay-as-you-go basis
 - Infrastructure as a service (IaaS)
 
@@ -495,18 +552,15 @@
 #### Which of the following terms relates to making a service available with no downtime for an extended period?
 - High availability
 
-#### Which storage redundancy option provides the highest degree of durability, with 16 nines of durability?
-- Geo-Redundant storage (GRS)
-
-#### ________ copies data to a secondary region from the primary region across multiple datacenters that are located many miles apart.
-- Geo-redundant storage (GRS)
-
 #### Which Azure Virtual Machine feature staggers updates across VMs based on their update domain and fault domain?
 - Availability sets
 - Note: Stagger means random-sequentially
 
-#### Rank Azure Architectual Components by their distance apart
-- Regions < Availability Zones < Region Pairs < Geographies
+#### What is high availability in a public cloud environment dependent on?
+- The service-level agreement (SLA) that you choose
+
+#### What is the physical infrastructure that a region pair resides in?
+- Geographies
 
 #### What Azure feature replicates resources across regions that are at least 300 miles away from each other?
 - Region Pairs
@@ -517,12 +571,25 @@
 #### In cloud computing, ________ allows you to deploy applications to regional datacenters around the world.
 - Geo-location / get-distribution
 
-#### What is high availability in a public cloud environment dependent on?
-- The service-level agreement (SLA) that you choose
+#### Rank Azure Architectual Components by their distance apart
+- Availability Zones < Regions < Region Pairs < Geographies
+
+#### Which two Azure resources can make use of availability zones?
+- Azure SQL databases 
+- Virtual Machines
+
+#### Which storage redundancy option provides the highest degree of durability, with 16 nines of durability?
+- Geo-Redundant storage (GRS)
+
+#### ________ copies data to a secondary region from the primary region across multiple datacenters that are located many miles apart.
+- Geo-redundant storage (GRS)
 
 -----
 
 ### Resource & Management Groups
+
+#### What is an Azure Storage account named storage001 an example of?
+- A resource
 
 #### What happens to the resources within a resource group when an action or setting at the Resource Group level is applied?
 - The setting is applied to current and future resources
@@ -542,12 +609,6 @@
 #### You use __________ to organize resources in an Azure subscription.
 - Resource groups
 
-#### How can Tailwind Traders allow some users to control the virtual machines in each environment but prevent them from modifying networking and other resources in the same resource group or Azure subscription?
-- Create a role assignment through Azure role-based access control (Azure RBAC)
-
-#### What can you use to allow a user to manage all the resources in a resource group?
-- Azure role-based access control (Azure RBAC)
-
 #### Which Azure feature enables you to organize multiple subscriptions in hierarchies for unified policies and compliance?
 - Management groups
 
@@ -561,8 +622,11 @@
 
 ### Scalability and elasiticy
 
-#### What is horizontal scaling
-- Adding more computing nodes (PCs or VMs)
+#### What is an advantage of cloud computing compared to on-premises deployments?
+- You can scale more quickly
+
+#### Which type of scaling involves adding or removing resources (such as virtual machines or containers) to meet demand?
+- Horizontal scaling (Adding nodes, without upgrading current machine)
 
 #### Adding more RAM and upgrading CPUs is called
 - Vertical Scalling
@@ -581,47 +645,12 @@
 
 -----
 
-### Security features
+### Security features (see M5)
 
-#### Which Azure Active Directory tool can vary the credentials needed to log in based on signals, such as where the user is located?
-- Conditional Access
+-----
 
-#### Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?
-- Conditional Access
+### Containers
 
-#### Which security model assumes the worst-case security scenario, and protects resources accordingly?
-- Zero trust
-
-#### What can you use to ensure that new and existing Azure resources stay in compliance with corporate standards?
-- Azure Policy
-
-#### What can you use to restrict the deployment of a virtual machine to a specific location?
-- Azure Policy
-
-#### What can you use to ensure that a development team can only create virtual machines of a certain size?
-- Azure Policy
-
-#### ________ enforces standards and assess compliance across your organization
-- Azure Policy
-
-#### You need to recommend a solution for Azure virtual machine deployments. The solution must enforce company standards on the virtual machines. What should you include in the recommendation?
-- Azure Policy
-
-#### How can you prevent non-compliant resources from being created, without having to manually evaluate each resource as it's created?
-- Azure Policy
-
-#### ________ is a repeatable set of governance tools that helps development teams quickly build and create new environments while adhering to organizational compliance to speed up development and deployment.
-- Azure Policy
-
-#### You need to ensure that multi-factor authentication (MFA) is enabled on accounts with write permissions in an Azure subscription. What should you implement?
-- Azure Policy
-
-#### You receive an email notification that virtual machines (VMs) in an Azure region where you have VMs deployed is experiencing an outage. Which component of Azure Service Health will let you know if your application is impacted?
-- Resource health
-
-#### Which defense in depth layer uses distributed denial of service (DDoS) protection?
-- Perimeter layer
-
-
-
-
+#### What are two services that allow you to run applications in containers?
+- Azure Kubernetes Service (AKS)
+- Azure Container Instances
