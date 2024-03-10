@@ -175,6 +175,7 @@
 ### Networking Services
 - **Azure Virtual Network (VNet)**
   - Allow Azure resources to intercommunicate
+  - Virtual network peering can be used to allow 2 virtual networks to communicate
 - **Azure Express Route**
   - Extends on-premises networks into Azure over a private fibre connection
   - Convert private cloud to hybrid cloud
@@ -185,6 +186,7 @@
   - Supports site-to-site VPN, and point-to-site VPN
 - **Container storage (blob):**
   - Optimized for storing large amounts of unstructured data
+  - Can contain thousands of files containing text and images
 - **Disk Storage**
 - **Azure Files**
   - Sets up a highly available network file share
@@ -284,14 +286,30 @@
 
 ### Storage
 
-#### What is the first step that you would take in order to share an image file as a blob in Azure Storage?
-- Create an Azure Storage account
+#### What is a blob?
+- Binary large objects (e.g., thousands of files containing text, images image and video)
 
 #### Which Azure Storage option is better for storing data for backup and restore, disaster recovery, and archiving?
 - Azure Blob Storage
 
 #### Which Azure Storage service supports big data analytics, as well as handling text and binary data types?
 - Azure Blobs
+
+#### Which Azure Storage service should you use to store unstructured files, such as images, that will be served on webpages?
+- Azure Blobs
+
+#### What is the first step that you would take in order to share an image file as a blob in Azure Storage?
+- Create an Azure Storage account
+
+#### Which Azure Blob storage tier Stores data offline, Offers the lowest storage costs, and has the highest costs to access data?
+- Archive tier
+
+#### Which Azure Blob storage service tier has the highest storage costs and the fastest access times for reading and writing data?
+- Hot tier
+
+#### Which two scenarios are common use cases for Azure Blob storage?
+- Serving images or documents directly to a browser
+- Storing data for backup and restore 
 
 #### You need to purchase an Azure account before you can use any Azure resources
 - False
@@ -328,12 +346,6 @@
 #### Which of the following options isn't a type of cloud computing?
 - Distributed cloud
 
-#### Which Azure compute resource can be deployed to manage a set of identical virtual machines?
-- Virtual machine scale sets
-
-#### Which of the following services should be used when the primary concern is to perform work in response to an event (often via a REST command) that needs a response in a few seconds?
-- Azure Functions
-
 #### Your company has a team of remote workers that need to use Windows-based software to develop your company's applications, but your team members are using various operating systems like macOS, Linux, and Windows. Which Azure compute service would help resolve this scenario?
 - Azure Virtual Desktop
 
@@ -369,33 +381,55 @@
 #### Which of the following statements is true?
 - With Operating Expenses (OpEx), you are only responsible for the computing resources that you use
 
-#### What's the best method to estimate the cost of migrating to the cloud while incurring minimal costs?
-- Use the Total Cost of Ownership calculator to estimate expected costs
-
 #### ________ estimates workload costs
 - Pricing calculator
 
 #### ________ estimates the cost savings by comparing datacenter costs to running the same workload on Azure
 - TCO calculator
 
+#### What's the best method to estimate the cost of migrating to the cloud while incurring minimal costs?
+- Use the Total Cost of Ownership calculator to estimate expected costs
+
 #### ________ helps control, analyze, and optimize workload costs
 - Cost management
+
+#### You plan to build a new solution in Azure that will use platform as a service (PaaS) products. What should you use to estimate the monthly costs?
+- Azure Pricing calculator
+
+#### What is the main difference inbetween Total Cost of Ownership (TCO) and Azure Pricing calculator?
+- TCO calculator estimates the cost of running an environment in Azure
+- Azure Pricing Calculator checks the cost of modifying plans and service grades in Azure
 
 #### Which of the following sentences best describes platform as a service (PaaS)?
 - Users can create & deploy an application as quickly as possible without having to worry about managing the underlying infrastructure.
 
+#### For which resource does Azure generate separate billing reports and invoices by default?
+- Azure Subscriptions
+
 -----
 
 ### IaaS, PaaS, SaaS
+
+#### In a platform as a service (PaaS) model, which two components are the responsibility of the cloud service provider?
+- Operating System & Physical Network
+
+#### What type of cloud service type would a Finance and Expense tracking solution typically be in?
+- SaaS
+
+#### Which type of cloud service model is typically licensed through a monthly or annual subscription?
+- SaaS
+
+#### In which cloud service model is the customer responsible for managing the operating system?
+- SaaS
+
+#### Which type of cloud service are virtual networks?
+- IaaS
 
 #### Which of the following requires the most user management of cloud services?
 - IaaS
 
 #### Which cloud service type is most suited to a lift-&-shift migration from an on-premises data center to a cloud deployment?
 - IaaS
-
-#### What type of cloud service type would a Finance and Expense tracking solution typically be in?
-- SaaS
 
 ####  According to the shared responsibility model, in which service model is the cloud provider only responsible for the basics of physical security, power, and connectivity.
 - IaaS
@@ -435,15 +469,16 @@
 #### ________ in Azure enables you to deploy Azure resources close to the users.
 - Geo-distribution
 
------
+#### In cloud computing, ________ allows you to deploy applications to regional datacenters around the world.
+- Geo-location / get-distribution
+
+#### What is high availability in a public cloud environment dependent on?
+- The service-level agreement (SLA) that you choose
 
 ### Resource & Management Groups
 
 #### What happens to the resources within a resource group when an action or setting at the Resource Group level is applied?
 - The setting is applied to current and future resources
-
-#### ________ enables you to provision a group of matching and load-balanced virtual machines in Azure.
-- An Azure virtual machine scale set
 
 #### Which of the following features does not apply to resource groups?
 - Resource groups can be nested
@@ -454,11 +489,33 @@
 #### You use _________ to organize resources in an Azure subscription.
 - Resource groups
 
+#### __________ is the logical container used to combine and organize Azure resources.
+- Resource groups
+- 
 #### Which Azure feature enables you to organize multiple subscriptions in hierarchies for unified policies and compliance?
 - Management groups
 
 #### Which of the following can be used to manage governance across multiple Azure subscriptions?
 - Management groups
+
+#### Which resource can you use to manage access, policies, and compliance across multiple subscriptions?
+- Management groups
+
+-----
+
+### Scalability and elasiticy
+
+#### What is horizontal scaling
+- Adding more computing nodes (PCs or VMs)
+
+#### Which Azure compute resource can be deployed to manage a set of identical virtual machines?
+- Virtual machine scale sets
+
+#### ________ enables you to provision a group of matching and load-balanced virtual machines in Azure.
+- An Azure virtual machine scale set
+
+#### ________ enables you to scale to thousands of virtual machines for high-performance computing and large-scale parallel jobs.
+- Azure Batch
 
 -----
 
@@ -473,13 +530,25 @@
 #### Which security model assumes the worst-case security scenario, and protects resources accordingly?
 - Zero trust
 
+#### What can you use to restrict the deployment of a virtual machine to a specific location?
+- Azure Policy
+
+#### What can you use to ensure that a development team can only create virtual machines of a certain size?
+- Azure Policy
+
 #### ________ enforces standards and assess compliance across your organization
+- Azure Policy
+
+#### You need to recommend a solution for Azure virtual machine deployments. The solution must enforce company standards on the virtual machines. What should you include in the recommendation?
 - Azure Policy
 
 #### How can you prevent non-compliant resources from being created, without having to manually evaluate each resource as it's created?
 - Azure Policy
 
 #### ________ is a repeatable set of governance tools that helps development teams quickly build and create new environments while adhering to organizational compliance to speed up development and deployment.
+- Azure Policy
+
+#### You need to ensure that multi-factor authentication (MFA) is enabled on accounts with write permissions in an Azure subscription. What should you implement?
 - Azure Policy
 
 #### You receive an email notification that virtual machines (VMs) in an Azure region where you have VMs deployed is experiencing an outage. Which component of Azure Service Health will let you know if your application is impacted?
@@ -497,9 +566,6 @@
 
 #### Which tool automatically keeps files between an on-premises Windows server and an Azure cloud environment updated?
 - Azure File Sync
-
-#### ________ enables you to scale to thousands of virtual machines for high-performance computing and large-scale parallel jobs.
-- Azure Batch
 
 
 
