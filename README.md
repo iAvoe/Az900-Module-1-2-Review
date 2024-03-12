@@ -59,7 +59,7 @@
 
 ### Platform as a Service (PaaS)
 - An environment for developing, testing, deploying software without focusing on managing the underlying infrastructure
-- **Examples:** *Same examples as IaaS*
+- **Examples:** *Same examples as IaaS*, Azure SQL Database
 - **Benefits:**
   - Skip (some of) the environment setup procedures and get to development
   - Can be more cost-effective than on-premise DIY
@@ -103,7 +103,7 @@
 ## Azure Architectual Components
 
 ### Rank Azure Architectual Components
-- Fault Domain `<` Availability Set `<` Data Center `<` Availability Zones `<` Regions `<` Region Pairs `<` Geographies
+- Fault Domain `<` Availability Set `<` Data Center `<` Availability Zone `<` Region `<` Region Pairs `<` Geographies
 
 ### Regions
 - One or many availability zones in close proximity
@@ -384,34 +384,36 @@
 
 ### Virtual Private Network (VPN) Gateway
 
+#### How many VPN gateways can you deploy in each virtual network?
+- 1 gateway: VPN gateway OR ExpressRoute gateway
+- Note: Site to VNet
+
 #### Tailwind Traders wants to use Azure ExpressRoute to connect its on-premises network to the Microsoft cloud. Which of the following choices isn't an ExpressRoute model that Tailwind Traders can use?
 - Site-to-site virtual private network (VPN)
 
 #### Which two services can you use to establish network connectivity between an on-premises network and Azure resources?
 - Azure VPN Gateway
 - ExpressRoute
+- Note: Site to VNet
 
 #### Which option is used to set the communication between an on-premises VPN device and an Azure VPN gateway through an encrypted tunnel over the internet?
 - Site-to-Site VPN
 
 #### Which scenario is a use case for a VPN gateway?
 - Connecting an on-premises datacenter to an Azure virtual network
+- Note: Site to VNet
 
 -----
 
 ### Virtual Network / VNet
 
-#### How many VPN gateways can you deploy in each virtual network?
-- 1 gateway: VPN gateway OR ExpressRoute gateway
-- Note: Site to VNet
-
-#### What can you use to connect Azure resources, such as Azure SQL databases, to an Azure virtual network?
-- Service Endpoints
-- Note: Resource to VNet
-
 #### You need to allow resources on two different Azure virtual networks to communicate with each other. What should you configure?
 - Virtual Network peering / VNet Peering
 - Note: VNet to VNet
+
+#### What can you use to connect Azure resources, such as Azure SQL databases, to an Azure virtual network?
+- Service Endpoints
+- Note: Resource to VNet & Service to VNet
 
 #### Your company has virtual machines (VMs) hosted in Microsoft Azure. The VMs are located in a single Azure virtual network named VNet1.
 #### The company has users that work remotely. The remote workers require access to the VMs on VNet1. To provide access for the remote workers, you:
@@ -501,7 +503,9 @@
 
 #### What is the difference inbetween Pricing calculator and TCO calculator?
 - Pricing calculator provides an estimate of the cost of Azure products and services
+- Pricing calculator is for monthly PaaS
 - TCO calculator helps you assess the potential financial impact of deploying Azure
+- TCO calculator is made for IaaS
 
 #### You plan to build a new solution in Azure that will use PaaS products. What should you use to estimate the monthly costs?
 - Azure Pricing calculator
@@ -524,6 +528,10 @@
 
 #### ________ helps control, analyze, and optimize workload costs
 - Cost management
+
+#### Which two features are available by using Azure Cost Management + Billing?
+- Create and manage budgets
+- Generate historical reports and forecast future usage
 
 -----
 
@@ -605,6 +613,9 @@
 #### What is high availability in a public cloud environment dependent on?
 - The service-level agreement (SLA) that you choose
 
+#### In a region pair, a region is paired with another region in the same
+- Geography
+
 #### What is the physical infrastructure that a region pair resides in?
 - Geographies
 
@@ -657,6 +668,9 @@
 
 #### An example of ________ is automatically scaling an application to ensure that the application has the resources needed to meet customer demands.
 - Elasiticity
+
+#### Deploying and configuring cloud-based resources quickly as business requirements change is called?
+- Agility
 
 -----
 
