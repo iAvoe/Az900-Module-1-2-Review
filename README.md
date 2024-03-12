@@ -177,16 +177,19 @@
 
 ### Networking Services
 - **Azure Virtual Network (VNet)**
-  - Allow Azure resources to intercommunicate
-  - Virtual network peering can be used to allow 2 virtual networks to communicate
+  - Networks in Azure between VMs are known as virtual networks.
+  - A virtual network can have multiple IP address spaces and multiple subnets
+  - Azure automatically routes traffic between different subnets within a virtual network.
 - **Azure Virtual Network Service Endpoints**
   - Connect Azure resources to an Azure virtual network
 - **Azure Express Route**
   - Extends on-premises networks into Azure over a private fibre connection
+    - Site to VNet
   - Convert private cloud to hybrid cloud
   - Support for bandwidth up to 100 Gbps
 - **VPN Gateway**
   - Alternate option than building a private fibre connection
+    - Site to VNet
   - Encrypt traffic between Azure VNet & an on-premises location
   - Supports site-to-site VPN, and point-to-site VPN
 - **Container storage (blob):**
@@ -403,38 +406,34 @@
 
 #### How many VPN gateways can you deploy in each virtual network?
 - 1 gateway: VPN gateway OR ExpressRoute gateway
-
-#### Which of the following options can you use to link virtual networks?
-- Multi-chassis link aggregation (MC-LAG)
+- Note: Site to VNet
 
 #### What can you use to connect Azure resources, such as Azure SQL databases, to an Azure virtual network?
 - Service Endpoints
-
-#### Your company plans to move several servers to Azure. The company's compliance policy states that a server named FinServer must be on a separate network segment.
-#### Which Azure solution should you recommend?
-- A virtual network for FinServer and another virtual network for all the other servers
-- Note: Networks in Azure are known as virtual networks. A virtual network can have multiple IP address spaces and multiple subnets,
-- Note: Azure automatically routes traffic between different subnets within a virtual network.
+- Note: Resource to VNet
 
 #### You need to allow resources on two different Azure virtual networks to communicate with each other. What should you configure?
 - Virtual Network peering / VNet Peering
-
-#### You have an Azure environment that contains multiple Azure virtual machines.
-#### You plan to implement a solution that enables the client computers on your on-premises network to communicate to the Azure virtual machines.
-#### You need to recommend which Azure resources must be created for the planned solution.
-#### What 2 Azure resources should you include in the recommendation?
-- A virtual network gateway
-- A gateway subnet
+- Note: VNet to VNet
 
 #### Your company has virtual machines (VMs) hosted in Microsoft Azure. The VMs are located in a single Azure virtual network named VNet1.
 #### The company has users that work remotely. The remote workers require access to the VMs on VNet1. To provide access for the remote workers, you:
-- Configure a Point-to-Site (P2S) VPN.
+- Configure a Point-to-Site (P2S) VPN
+- Note: Point to Site, then Site to VNet
 
-#### (Repeated from M1) How many VPN gateways can you deploy in each virtual network?
-- 1 gateway: VPN gateway OR ExpressRoute gateway
-
-#### (Repeated from M1) Which of the following options can you use to link virtual networks?
+#### Which of the following options can you use to link virtual networks?
 - Multi-chassis link aggregation (MC-LAG)
+- Note: VNet to VNet
+
+#### Your company plans to move several servers to Azure. The company's compliance policy states that a server named FinServer must be on a separate network segment. Which Azure solution should you recommend?
+- A virtual network for FinServer and another virtual network for all the other servers
+- Note: separation means creating subnet or VLANs, which in Azure is to create a VNet
+
+#### You have an Azure environment that contains multiple Azure virtual machines. You plan to implement a solution that enables the client computers on your on-premises network to communicate to the Azure virtual machines. You need to recommend which Azure resources must be created for the planned solution. What 2 Azure resources should you include in the recommendation?
+- A virtual network gateway
+- A gateway subnet
+- Note: Site to VNet
+
 
 -----
 
