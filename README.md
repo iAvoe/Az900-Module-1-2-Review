@@ -265,9 +265,6 @@
 #### Which of the following is a logical unit of Azure services that links to an Azure account?
 - Azure subscription
 
-#### Which of the following statement is valid about an Azure subscription?
-- An Azure subscription is a logical unit of Azure services
-
 #### A user is simultaneously assigned multiple roles that use role-based access control. What are their actual permissions? The role permissions are:
 #### Role 1 - read || Role 2 - write || Role 3 - read and write.
 - Read and write
@@ -441,6 +438,57 @@
 
 -----
 
+### Resource & Management Groups
+
+#### What is an Azure Storage account named storage001 an example of?
+- A resource
+
+#### What happens to the resources within a resource group when an action or setting at the Resource Group level is applied?
+- The setting is applied to current and future resources
+
+#### Which of the following features does not apply to resource groups?
+- Resource groups can be nested
+
+#### How many resource groups can a resource be in at the same time?
+- One
+
+#### You use _________ to organize resources in an Azure subscription.
+- Resource groups
+
+#### __________ is the logical container used to combine and organize Azure resources.
+- Resource groups
+
+#### You use __________ to organize resources in an Azure subscription.
+- Resource groups
+
+#### Which Azure feature enables you to organize multiple subscriptions in hierarchies for unified policies and compliance?
+- Management groups
+
+#### Which of the following can be used to manage governance across multiple Azure subscriptions?
+- Management groups
+
+#### Which resource can you use to manage access, policies, and compliance across multiple subscriptions?
+- Management groups
+
+-----
+
+### Azure Subscription
+
+#### Which 2 components can be created by an Azure subscription?
+- Azure Account
+- Azure Resource
+
+#### Which of the following statement is valid about an Azure subscription?
+- An Azure subscription is a logical unit of Azure services
+
+#### Your company plans to migrate all its network resources to Azure. You need to start the planning process by exploring Azure. What should you create first?
+- Subscription
+
+#### For which resource does Azure generate separate billing reports and invoices by default?
+- Azure Subscriptions
+
+-----
+
 ### Billing
 
 #### ______ refers to upfront costs incurred one time, such as hardware purchases.
@@ -448,12 +496,6 @@
 
 #### Why is cloud computing often less expensive than on-premises datacenters?
 - You are only billed for what you use (OpEx)
-
-#### For which resource does Azure generate separate billing reports and invoices by default?
-- Azure Subscriptions
-
-#### Your company plans to migrate all its network resources to Azure. You need to start the planning process by exploring Azure. What should you create first?
-- Subscription
 
 #### Which two factors affect Azure costs?
 - Resource Location
@@ -499,9 +541,6 @@
 - Physical Network
 
 #### Which cloud service model is used by Microsoft Office 365?
-- SaaS
-
-#### Which type of cloud service model is typically licensed through a monthly or annual subscription?
 - SaaS
 
 #### What type of cloud service type would a Finance and Expense tracking solution typically be in?
@@ -568,6 +607,9 @@
 #### What Azure feature replicates resources across regions that are at least 300 miles away from each other?
 - Region Pairs
 
+#### Which Azure component allows you to replicate resources across a geography to ensure business continuity during a natural disaster at the primary site?
+- Region Pairs
+
 #### ________ in Azure enables you to deploy Azure resources close to the users.
 - Geo-distribution
 
@@ -583,40 +625,6 @@
 
 #### ________ copies data to a secondary region from the primary region across multiple datacenters that are located many miles apart.
 - Geo-redundant storage (GRS)
-
------
-
-### Resource & Management Groups
-
-#### What is an Azure Storage account named storage001 an example of?
-- A resource
-
-#### What happens to the resources within a resource group when an action or setting at the Resource Group level is applied?
-- The setting is applied to current and future resources
-
-#### Which of the following features does not apply to resource groups?
-- Resource groups can be nested
-
-#### How many resource groups can a resource be in at the same time?
-- One
-
-#### You use _________ to organize resources in an Azure subscription.
-- Resource groups
-
-#### __________ is the logical container used to combine and organize Azure resources.
-- Resource groups
-
-#### You use __________ to organize resources in an Azure subscription.
-- Resource groups
-
-#### Which Azure feature enables you to organize multiple subscriptions in hierarchies for unified policies and compliance?
-- Management groups
-
-#### Which of the following can be used to manage governance across multiple Azure subscriptions?
-- Management groups
-
-#### Which resource can you use to manage access, policies, and compliance across multiple subscriptions?
-- Management groups
 
 -----
 
