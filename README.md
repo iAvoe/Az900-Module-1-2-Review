@@ -102,6 +102,9 @@
 
 ## Azure Architectual Components
 
+### Rank Azure Architectual Components
+- Fault Domain `<` Availability Set `<` Data Center `<` Availability Zones `<` Regions `<` Region Pairs `<` Geographies
+
 ### Regions
 - One or many availability zones in close proximity
 - Reduce customer latency by having service a close-by infrastructure
@@ -570,9 +573,6 @@
 
 #### In cloud computing, ________ allows you to deploy applications to regional datacenters around the world.
 - Geo-location / get-distribution
-
-#### Rank Azure Architectual Components by their distance apart
-- Availability Zones < Regions < Region Pairs < Geographies
 
 #### Which two Azure resources can make use of availability zones?
 - Azure SQL databases 
