@@ -401,9 +401,6 @@
 
 ### Virtual Network / VNet
 
-#### Which type of cloud service are virtual networks?
-- IaaS
-
 #### How many VPN gateways can you deploy in each virtual network?
 - 1 gateway: VPN gateway OR ExpressRoute gateway
 - Note: Site to VNet
@@ -433,7 +430,6 @@
 - A virtual network gateway
 - A gateway subnet
 - Note: Site to VNet
-
 
 -----
 
@@ -493,21 +489,28 @@
 #### ______ refers to upfront costs incurred one time, such as hardware purchases.
 - Capital expenditure (CapEx)
 
+#### Which of the following statements is true?
+- With OpEx, you are only responsible for the computing resources that you use
+
 #### Why is cloud computing often less expensive than on-premises datacenters?
-- You are only billed for what you use (OpEx)
+- You are only billed for what you use
 
 #### Which two factors affect Azure costs?
-- Resource Location
-- Resource Usage
+- Resource Location (Different regions have different operating costs in electricity, cooling)
+- Resource Usage (CPU, Disk size, Disk type)
 
-#### Which of the following statements is true?
-- With Operating Expenses (OpEx), you are only responsible for the computing resources that you use
+#### What is the difference inbetween Pricing calculator and TCO calculator?
+- Pricing calculator provides an estimate of the cost of Azure products and services
+- TCO calculator helps you assess the potential financial impact of deploying Azure
 
-#### You plan to build a new solution in Azure that will use platform as a service (PaaS) products. What should you use to estimate the monthly costs?
+#### You plan to build a new solution in Azure that will use PaaS products. What should you use to estimate the monthly costs?
 - Azure Pricing calculator
 
 #### ________ estimates workload costs
-- Pricing calculator
+- Azure Pricing calculator
+
+#### You need to compare the costs of running an application in an on-premises datacenter with the costs of running the application in Azure. What should you use to assist you?
+- Total Cost of Ownership (TCO) Calculator
 
 #### ________ estimates the cost savings by comparing datacenter costs to running the same workload on Azure
 - Total Cost of Ownership (TCO) calculator
@@ -526,18 +529,21 @@
 
 ### IaaS, PaaS, SaaS
 
-#### What uses the infrastructure as a service (IaaS) cloud service model?
+#### What uses the IaaS cloud service model?
 - Azure virtual machines
 
-#### Which of the following sentences best describes platform as a service (PaaS)?
+#### Which of the following sentences best describes PaaS?
 - Users can create & deploy an application as quickly as possible without having to worry about managing the underlying infrastructure.
 
-#### What is the customer responsible for in a software as a service (SaaS) model?
+#### What is the customer responsible for in a SaaS model?
 - Data and access
 
-#### In a platform as a service (PaaS) model, which two components are the responsibility of the cloud service provider?
+#### In a PaaS model, which two components are the responsibility of the cloud service provider?
 - Operating System
 - Physical Network
+
+#### ________ provides hosting and management of an application and its underlying infrastructure, as well as any maintenance, upgrades, and security patching
+- SaaS
 
 #### Which cloud service model is used by Microsoft Office 365?
 - SaaS
@@ -547,6 +553,12 @@
 
 #### Which type of cloud service model is typically licensed through a monthly or annual subscription?
 - SaaS
+
+#### Your organization is building a custom application. You need to focus on application development rather than configuration and management of servers. Which cloud service model should you use?
+- PaaS (You don't know what software and tools the devs really use)
+
+#### ________ provides a fully managed environment for developing, testing, delivering, and managing cloud-based applications
+- PaaS
 
 #### Which cloud service model is used by Azure SQL Database?
 - PaaS
@@ -567,18 +579,11 @@
 ####  According to the shared responsibility model, in which service model is the cloud provider only responsible for the basics of physical security, power, and connectivity.
 - IaaS
 
-#### ________ provides hosting and management of an application and its underlying infrastructure, as well as any maintenance, upgrades, and security patching
-- Software as a service (SaaS)
-
-#### ________ provides a fully managed environment for developing, testing, delivering, and managing cloud-based applications
-- Platform as a service (PaaS)
-
-#### Your organization is building a custom application. You need to focus on application development rather than configuration and management of servers. Which cloud service model should you use?
-- Platform as a service (PaaS)
-- Note: You don't know what software and tools the devs are planning to use
+#### Which type of cloud service are virtual networks?
+- IaaS
 
 #### ________ provides servers and virtual machines, storage, networks, and operating systems on a pay-as-you-go basis
-- Infrastructure as a service (IaaS)
+- IaaS
 
 #### Which of the following choices isn't a cloud computing category?
 - Network-as-a-Service (NaaS)
@@ -627,7 +632,7 @@
 
 -----
 
-### Scalability and elasiticy
+### Scalability, agility and elasiticy
 
 #### What is an advantage of cloud computing compared to on-premises deployments?
 - You can scale more quickly
@@ -649,6 +654,9 @@
 
 #### You have an Azure virtual machine that is accessed only between 9:00 and 17:00 each day.  What should you do to minimize costs but preserve the associated hard disks and data?
 - Deallocate the virtual machine when it is not needed
+
+#### An example of ________ is automatically scaling an application to ensure that the application has the resources needed to meet customer demands.
+- Elasiticity
 
 -----
 
